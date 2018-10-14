@@ -1,6 +1,6 @@
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/treeplantingapp';
-const secret = process.env.SECRET || 'treeplantingapp';
-const port = process.env.PORT || 4000;
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/treeplantapp';
+const secret = process.env.SECRET || 'sdkjfnskdfj';
+const port = process.env.PORT || 8000;
 console.log('port is, mongodb is', port, dbURI);
 
 module.exports = {

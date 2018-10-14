@@ -4,6 +4,7 @@ const Router = express.Router();
 
 // import controllers
 const usersController = require('../controllers/usersController');
+const eventsController = require('../controllers/eventsController');
 const authController = require('../controllers/authController');
 
 Router.route('/')
@@ -28,5 +29,15 @@ Router.route('/users/:id')
   .get(usersController.show)
   .put(usersController.update)
   .delete(usersController.delete);
+
+// Events
+Router.route('/events')
+  .get(eventsController.index)
+  .post(eventsController.create);
+
+Router.route('/users/:id')
+  .get(eventsController.show)
+  .put(eventsController.update)
+  .delete(eventsController.delete);
 
 module.exports = Router;
